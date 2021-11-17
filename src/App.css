@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+  font-family: 'Ubuntu', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  max-width: 600px;
+  min-height: 300px;
+  border: 1px solid black;
+  padding: 25px;
+  margin: auto;
+  margin-top: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.addTask {
+ font-size: 20px; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addTask label {
+  display:flex;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.addTask input {
+  margin-bottom: 20px;
+  font-size: 20px; 
+  display:flex;
+  width: 99%;
+}
+
+.addTask-submit input {
+  width: 100%;
+}
+
+.eachTask {
+  background-color: lightgray;
+  padding: 5px 5px 5px 5px ;
+  margin-top: 15px;
+}
+
+.eachTask h1 {
+  
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
